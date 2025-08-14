@@ -1,0 +1,6 @@
+# smallest-multiple
+import math, functools
+
+for _ in range(int(input())):
+    N = int(input())
+    print(functools.reduce(math.lcm, range(N//2+1, N+1)))
